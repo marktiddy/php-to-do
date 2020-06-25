@@ -6,17 +6,19 @@ if (isset($_GET['submit'])) {
   if (strlen($_GET['item']) > 0) {
     //Store our submission in variable
     $item = $_GET['item'];
+    $newArr = ['item'=>$item,'done'=>false];
     if (isset($_SESSION['todo_list'])) {
-      $newArray = array_push($_SESSION['todo_list'],$item);
+      $newArray = array_push($_SESSION['todo_list'],$newArr);
       
     } else {
-    $_SESSION['todo_list'] = [$item];
+    $_SESSION['todo_list'] = [$newArr];
     }
   } else {
     $error = 'You must add something in the item box';
   }
 
-  
+  //$test = [['item'=>'buy something','done'=>true]]
+
 }
 
 ?>

@@ -3,7 +3,6 @@ include('nav.php');
 
 
 
-
 ?>
 <div class="container">
   <div class="row">
@@ -17,8 +16,14 @@ include('nav.php');
       <?php include('list.php')?>
     </div>
   </div>
+
+
+
+
 </div>
+
   
   </body>
+  <script src="scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
